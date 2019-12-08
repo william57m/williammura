@@ -1,0 +1,70 @@
+.img-carousel {
+  height: 600px;
+}
+
+.slick-slider {
+  height: 600px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    height: auto;
+  }
+  .slick-slider {
+    height: auto;
+  }
+  .img-carousel {
+    width: auto;
+    height: unset;
+  }
+}
+
+/* Override library */
+
+.slick-slide img:focus  {
+  outline: 0 !important;
+}
+.slick-slide div:focus  {
+  outline: 0 !important;
+}
+
+/* Buttons */
+
+.nav-button {
+  position: absolute;
+  top: 280px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 0px;
+  height: 40px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+.nav-button:focus {
+  outline: 0;
+}
+.nav-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.nav-button:before {
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  font-family: revicons;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+.nav-button-left {
+  left: 0px;
+}
+.nav-button-left:before {
+  content: "\E824";
+}
+.nav-button-right {
+  right: 0px;
+}
+.nav-button-right:before {
+  content: "\E825";
+}

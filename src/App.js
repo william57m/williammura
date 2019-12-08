@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Header } from './components/Header';
+
+// Pages
+import { Portrait } from './pages/Portrait';
+import { Landscape } from './pages/Landscape';
+import { About } from './pages/About';
+
+// CSS
 import './App.css';
+import 'react-multi-carousel/lib/styles.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <div className="contentWrapper">
+          <Header />
+          <Switch>
+            <Route path="/" exact>
+              <Portrait />
+            </Route>
+            <Route path="/landscapes">
+              <Landscape />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
-}
-
-export default App;
+};

@@ -1,0 +1,33 @@
+.header {
+  height: 100px;
+  background: #FFFFFF;
+  padding: 20px 40px;
+}
+
+.header .title {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #202020;
+  font-family: "Lato";
+}
+
+.menu {
+  color: #707070;
+  float: right;
+}
+
+.menu span {
+  margin-right: 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #707070;
+}
+
+.menu a:hover {
+  color: #000000;
+}
