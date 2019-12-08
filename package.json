@@ -17,7 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "publish": "node scripts/publish.js"
+    "site:publish": "node scripts/publish.js"
   },
   "eslintConfig": {
     "extends": "react-app"
