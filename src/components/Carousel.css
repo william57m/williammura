@@ -10,48 +10,6 @@
   height: 600px;
 }
 
-/* Responsive */
-
-@media screen and (max-width: 600px) {
-  .content {
-    height: unset !important;
-  }
-  .menu {
-    float: unset;
-    text-align: center;
-  }
-  .menu span {
-    margin: 0px 10px;
-  }
-  .header .title {
-    font-size: 40px;
-    text-align: center;
-  }
-  .swiper-container {
-    height: auto;
-  }
-  .swiper-slide.photo-item .img-carousel {
-    width: 100%;
-    height: auto;
-  }
-  .photo-item {
-    margin-bottom: -3px;
-  }
-  .photo-item img {
-    width: 100%;
-    height: auto;
-  }
-  .social {
-    text-align: center;
-  }
-  .back-to-top {
-    display: block;
-  }
-  .cover .img-portrait {
-    left: calc(50% - 100px) !important;
-  }
-}
-
 /* Buttons */
 
 .nav-button.swiper-button-prev,
