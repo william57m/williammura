@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
 // Components
 import { Footer } from './components/Footer';
@@ -13,9 +14,13 @@ import { About } from './pages/About';
 // CSS
 import './App.css';
 
+export const history = createBrowserHistory({
+  basename: process.env.PUBLIC_URL
+});
+
 export default function App() {
   return (
-    <Router>
+    <Router history={history}>
       <div className="App">
         <div className="contentWrapper">
           <Header />
