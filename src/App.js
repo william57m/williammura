@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+// Components
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 
@@ -10,9 +12,6 @@ import { About } from './pages/About';
 
 // CSS
 import './App.css';
-// import 'react-multi-carousel/lib/styles.css';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
 
 export default function App() {
   return (
