@@ -3,7 +3,6 @@ import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css'
 import './Carousel.css';
 
-
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
   useLayoutEffect(() => {

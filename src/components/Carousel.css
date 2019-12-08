@@ -47,6 +47,9 @@
   .back-to-top {
     display: block;
   }
+  .cover .img-portrait {
+    left: calc(50% - 100px) !important;
+  }
 }
 
 /* Buttons */

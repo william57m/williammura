@@ -1,18 +1,33 @@
 .about {
   padding: 40px;
-  display: flex;
-  flex-direction: row;
-  width: 960px;
-  margin: auto;
 }
 
-.about img {
-  width: 300px;
-  height: auto;
+.cover {
+  background-image: url(/images/cover.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: 350px;
+  position: relative;
+}
+
+.cover .img-portrait {
+  width: 200px;
+  border-radius: 300px;
+  position: absolute;
+  border: 5px solid #FFFFFF;
+  left: 60px;
+  top: 220px;
 }
 
 .about .description {
-  padding: 0px 20px;
+  padding: 60px 20px;
   font-size: 18px;
   text-align: justify;
+}
+
+.about .signature {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.8em
 }
