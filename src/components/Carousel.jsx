@@ -1,48 +1,41 @@
 import React from 'react';
-import Slider from 'react-slick';
+import Swiper from 'react-id-swiper';
+import 'swiper/css/swiper.css'
 import './Carousel.css';
 
-function PrevArrow(props) {
-  return (
-    <button className="nav-button nav-button-left" onClick={props.onClick} />
-  );
-}
-
-function NextArrow(props) {
-  return (
-    <button className="nav-button nav-button-right" onClick={props.onClick} />
-  );
-}
 
 export function Carousel(props) {
-  const responsive = [
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
+  const responsive = {
+    760: {
+      slidesPerView: 'auto',
+      spaceBetween: 0
+    },
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 0
     }
-  ];
-  const settings = {
-    infinite: true,
-    slidesToShow: 3,
-    variableWidth: true,
-    focusOnSelect: true,
-    initialSlide: 0,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    responsive,
+  }
+  const params = {
+    // centeredSlides: true,
+    // loop: true,
+    // lazy: true,
+    breakpoints: responsive,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    renderPrevButton: () => <div className="nav-button swiper-button-prev" />,
+    renderNextButton: () => <div className="nav-button swiper-button-next" />,
     ...props.settings
-  };
+  }
   const photosItem = props.photos.map((photo, index) => (
-    <div key={`photo-${index}`}>
-      <img alt="Portrait" src={photo} className="img-carousel" />
-    </div>
+      <div className="photo-item" key={`photo-${index}`} style={{width: photo.width}}>
+        <img alt="Portrait" src={photo.src} className="img-carousel" />
+      </div>
   ));
   return (
-    <Slider {...settings}>
+    <Swiper {...params}>
       {photosItem}
-    </Slider>
+    </Swiper>
   );
 }

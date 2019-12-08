@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 
 // Pages
@@ -9,9 +10,9 @@ import { About } from './pages/About';
 
 // CSS
 import './App.css';
-import 'react-multi-carousel/lib/styles.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+// import 'react-multi-carousel/lib/styles.css';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
               <About />
             </Route>
           </Switch>
+          <Footer />
         </div>
       </div>
     </Router>

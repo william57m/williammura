@@ -1,70 +1,51 @@
+/* Swiper */
+
+.swiper-container {
+  height: 600px;
+}
+
+/* Image */
+
 .img-carousel {
   height: 600px;
 }
 
-.slick-slider {
-  height: 600px;
-  overflow: hidden;
-}
+/* Responsive */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
   .content {
     height: auto;
   }
-  .slick-slider {
+  .swiper-container {
     height: auto;
   }
-  .img-carousel {
-    width: auto;
-    height: unset;
+  .swiper-slide.photo-item .img-carousel {
+    width: 100%;
+    height: auto;
   }
-}
-
-/* Override library */
-
-.slick-slide img:focus  {
-  outline: 0 !important;
-}
-.slick-slide div:focus  {
-  outline: 0 !important;
 }
 
 /* Buttons */
 
-.nav-button {
-  position: absolute;
-  top: 280px;
-  background: rgba(0, 0, 0, 0.4);
-  border: 0px;
-  height: 40px;
-  width: 30px;
+.nav-button.swiper-button-prev,
+.nav-button.swiper-button-next {
+  background: rgba(0, 0, 0, 0.2);
+  height: 60px;
+  width: 40px;
   cursor: pointer;
-  z-index: 2;
 }
-.nav-button:focus {
-  outline: 0;
+.nav-button.swiper-button-prev:hover,
+.nav-button.swiper-button-next:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
-.nav-button:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-.nav-button:before {
-  font-size: 20px;
-  color: #fff;
-  display: block;
-  font-family: revicons;
-  text-align: center;
-  z-index: 2;
-  position: relative;
-}
-.nav-button-left {
+.nav-button.swiper-button-prev {
   left: 0px;
 }
-.nav-button-left:before {
-  content: "\E824";
-}
-.nav-button-right {
+.nav-button.swiper-button-next {
   right: 0px;
 }
-.nav-button-right:before {
-  content: "\E825";
+.nav-button.swiper-button-prev:after,
+.nav-button.swiper-button-next:after {
+  font-size: 18px;
+  color: #FFFFFF;
 }

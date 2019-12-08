@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css'
+
 export function Header() {
   return (
     <div className="header">
@@ -11,5 +12,5 @@ export function Header() {
         <Link to="/about"><span>About</span></Link>
       </div>
     </div>
-  )
+  );
 }

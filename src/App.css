@@ -1,4 +1,4 @@
-html, body, #root, .App {
+html, body, #root {
   height: 100%;
 }
 
@@ -6,6 +6,8 @@ html, body, #root, .App {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
 }
 
 .content {
@@ -13,7 +15,6 @@ html, body, #root, .App {
 }
 
 .contentWrapper {
-  height: 740px;
   width: 100%;;
   flex: 0 1 auto;
 }
