@@ -4,7 +4,7 @@ import './Header.css'
 export function Header() {
   return (
     <div className="header">
-      <div className="title">WILLIAM MURA</div>
+      <div className="title"><Link to="/">WILLIAM MURA</Link></div>
       <div className="menu">
         <Link to="/"><span>Portraits</span></Link>
         <Link to="/landscapes"><span>Landscapes</span></Link>

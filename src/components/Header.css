@@ -4,12 +4,14 @@
   padding: 20px 40px;
 }
 
+.header .title a,
 .header .title {
   font-size: 45px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 20px;
   color: #202020;
-  font-family: "Lato";
+  font-family: "Futura PT";
+  text-decoration: none;
 }
 
 .menu {

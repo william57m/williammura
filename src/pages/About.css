@@ -1,0 +1,22 @@
+.about {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  width: 960px;
+  margin: auto;
+}
+
+.about img {
+  width: 300px;
+  height: auto;
+}
+
+.about .portrait {
+
+}
+
+.about .description {
+  padding: 0px 20px;
+  font-size: 18px;
+  text-align: justify;
+}

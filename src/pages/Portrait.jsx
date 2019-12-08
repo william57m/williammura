@@ -10,8 +10,7 @@ export function Portrait() {
     'images/portraits/A29A2796.jpg',
     'images/portraits/A29A2244.jpg',
     'images/portraits/A29A1784.jpg',
-    'images/portraits/IMG_1770.jpg',
-    'images/portraits/A29A2257.jpg'
+    'images/portraits/IMG_1770.jpg'
   ];
   return (
     <div className="content">
