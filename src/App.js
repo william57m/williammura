@@ -14,7 +14,7 @@ import { About } from './pages/About';
 // CSS
 import './App.css';
 
-export const history = createBrowserHistory({
+const history = createBrowserHistory({
   basename: process.env.PUBLIC_URL
 });
 
