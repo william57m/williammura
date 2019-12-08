@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/williammura/static/css/main.f65f9ced.chunk.css",
+    "main.js": "/williammura/static/js/main.ae004cab.chunk.js",
+    "main.js.map": "/williammura/static/js/main.ae004cab.chunk.js.map",
+    "runtime-main.js": "/williammura/static/js/runtime-main.132a97d4.js",
+    "runtime-main.js.map": "/williammura/static/js/runtime-main.132a97d4.js.map",
+    "static/css/2.9bd960b0.chunk.css": "/williammura/static/css/2.9bd960b0.chunk.css",
+    "static/js/2.10ac6c0a.chunk.js": "/williammura/static/js/2.10ac6c0a.chunk.js",
+    "static/js/2.10ac6c0a.chunk.js.map": "/williammura/static/js/2.10ac6c0a.chunk.js.map",
+    "index.html": "/williammura/index.html",
+    "precache-manifest.abd0139186eb2f75dea6b357af0ac304.js": "/williammura/precache-manifest.abd0139186eb2f75dea6b357af0ac304.js",
+    "service-worker.js": "/williammura/service-worker.js",
+    "static/css/2.9bd960b0.chunk.css.map": "/williammura/static/css/2.9bd960b0.chunk.css.map",
+    "static/css/main.f65f9ced.chunk.css.map": "/williammura/static/css/main.f65f9ced.chunk.css.map",
+    "static/js/2.10ac6c0a.chunk.js.LICENSE": "/williammura/static/js/2.10ac6c0a.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.132a97d4.js",
+    "static/css/2.9bd960b0.chunk.css",
+    "static/js/2.10ac6c0a.chunk.js",
+    "static/css/main.f65f9ced.chunk.css",
+    "static/js/main.ae004cab.chunk.js"
+  ]
+}
