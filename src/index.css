@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Futura PT';
+  src: url('fonts/FuturaPT-Medium.woff2') format('woff2'),
+      url('fonts/FuturaPT-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
 html, body, #root {
   height: 100%;
 }
@@ -15,3 +23,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

@@ -12,6 +12,10 @@
   text-decoration: none;
 }
 
+.social a {
+  margin-right: 10px;
+}
+
 .social svg {
   width: 20px;
   color: #707070;
@@ -39,4 +43,11 @@
 
 .menu a:hover {
   color: #000000;
+}
+
+.back-to-top {
+  display: none;
+  margin-bottom: 15px;
+  font-size: 12px;
+  cursor: pointer;
 }

@@ -5,11 +5,13 @@
 
 .header .title a,
 .header .title {
-  font-size: 45px;
-  font-weight: 400;
   color: #202020;
-  font-family: "Futura PT";
   text-decoration: none;
+}
+.header .title {
+  font-size: 45px;
+  font-weight: 500;
+  font-family: "Futura PT";
 }
 
 .menu {
@@ -18,7 +20,7 @@
 }
 
 .menu span {
-  margin-right: 50px;
+  margin: 0px 25px;
   font-size: 14px;
   font-weight: 500;
 }
