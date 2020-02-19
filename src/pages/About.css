@@ -3,7 +3,7 @@
 }
 
 .cover {
-  background-image: url(/images/cover.jpg);
+  background-image: url(/williammura/images/cover.jpg);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;

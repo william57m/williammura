@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
 // Components
@@ -15,12 +15,12 @@ import { About } from './pages/About';
 import './App.css';
 
 const history = createBrowserHistory({
-  basename: process.env.PUBLIC_URL
+  basename: '/williammura/'
 });
 
 export default function App() {
   return (
-    <Router history={history}>
+    <Router history={history} basename="/williammura/">
       <div className="App">
         <div className="contentWrapper">
           <Header />
